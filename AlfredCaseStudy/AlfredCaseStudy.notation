@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_3ECeUOjkEeiSM58Ap4YmOQ" type="PapyrusUMLClassDiagram" name="SysML 1.4 Requirement" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_4mlPIOjkEeiSM58Ap4YmOQ" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_4mlPIujkEeiSM58Ap4YmOQ" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_4mlPI-jkEeiSM58Ap4YmOQ" type="Package_PackagedElementCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_4mlPJOjkEeiSM58Ap4YmOQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4mlPJejkEeiSM58Ap4YmOQ"/>
+    </children>
+    <element xmi:type="uml:Package" href="AlfredCaseStudy.uml#_4miy4OjkEeiSM58Ap4YmOQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4mlPIejkEeiSM58Ap4YmOQ" x="339" y="158"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_3ECeUejkEeiSM58Ap4YmOQ" name="diagram_compatibility_version" stringValue="1.2.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_3ECeUujkEeiSM58Ap4YmOQ"/>
+  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_3ECeU-jkEeiSM58Ap4YmOQ">
+    <owner xmi:type="uml:Model" href="AlfredCaseStudy.uml#_2_tX8OjkEeiSM58Ap4YmOQ"/>
+    <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.sysml14.diagram.requirement/resources/configuration/requirementDiagram.configuration#_ZrBf4JaBEeS8eNvSwD0lgA"/>
+  </styles>
+  <element xmi:type="uml:Model" href="AlfredCaseStudy.uml#_2_tX8OjkEeiSM58Ap4YmOQ"/>
+</notation:Diagram>
