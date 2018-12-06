@@ -13,6 +13,32 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_pxf1gO5bEeiXj-mfpgRPMA" name="Alfred doit pouvoir afficher les informations sur les smartphones des habitants"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_wI8fwO5bEeiXj-mfpgRPMA" name="Alfred doit pouvoir afficher les prévisions pour la semaine"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0Tvz8PkqEei33fxMaNEc1g" name="Cas d'utilisations">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2QkF8PkqEei33fxMaNEc1g" name="Utilisateur"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_HJIlkPkrEei33fxMaNEc1g" name="Lire le dernier conseil"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_MiVe4PkrEei33fxMaNEc1g" name="Lire la qualité de l'air"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_olJCUPkrEei33fxMaNEc1g" memberEnd="_olMssPkrEei33fxMaNEc1g _olMssfkrEei33fxMaNEc1g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_olLekPkrEei33fxMaNEc1g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_olLekfkrEei33fxMaNEc1g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_olMssPkrEei33fxMaNEc1g" name="lire le dernier conseil" type="_HJIlkPkrEei33fxMaNEc1g" association="_olJCUPkrEei33fxMaNEc1g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_olMssfkrEei33fxMaNEc1g" name="utilisateur" type="_2QkF8PkqEei33fxMaNEc1g" association="_olJCUPkrEei33fxMaNEc1g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pSFA0PkrEei33fxMaNEc1g" memberEnd="_pSFn4fkrEei33fxMaNEc1g _pSFn4vkrEei33fxMaNEc1g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pSFA0fkrEei33fxMaNEc1g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pSFn4PkrEei33fxMaNEc1g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_pSFn4fkrEei33fxMaNEc1g" name="lire la qualité de l'air" type="_MiVe4PkrEei33fxMaNEc1g" association="_pSFA0PkrEei33fxMaNEc1g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_pSFn4vkrEei33fxMaNEc1g" name="utilisateur" type="_2QkF8PkqEei33fxMaNEc1g" association="_pSFA0PkrEei33fxMaNEc1g"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_D-pKEPksEei33fxMaNEc1g" name="Séquence lire le dernier conseil">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_hRcVwPksEei33fxMaNEc1g" name="Utilisateur" coveredBy="_vffv4PksEei33fxMaNEc1g _vfg-AfksEei33fxMaNEc1g _vfg-APksEei33fxMaNEc1g"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_i-BzYPksEei33fxMaNEc1g" name="Alfred"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_vffv4PksEei33fxMaNEc1g" name="ActionExecSpecStart" covered="_hRcVwPksEei33fxMaNEc1g" execution="_vfg-APksEei33fxMaNEc1g"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_vfg-APksEei33fxMaNEc1g" name="ActionExecSpec" covered="_hRcVwPksEei33fxMaNEc1g" finish="_vfg-AfksEei33fxMaNEc1g" start="_vffv4PksEei33fxMaNEc1g"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_vfg-AfksEei33fxMaNEc1g" name="ActionExecSpecFinish" covered="_hRcVwPksEei33fxMaNEc1g" execution="_vfg-APksEei33fxMaNEc1g"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_a0T4MOjvEeiSM58Ap4YmOQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a0T4MejvEeiSM58Ap4YmOQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
