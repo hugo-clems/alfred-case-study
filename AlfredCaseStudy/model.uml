@@ -32,17 +32,6 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_pSFn4vkrEei33fxMaNEc1g" name="utilisateur" type="_2QkF8PkqEei33fxMaNEc1g" association="_pSFA0PkrEei33fxMaNEc1g"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_D-pKEPksEei33fxMaNEc1g" name="Séquence lire le dernier conseil">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_hRcVwPksEei33fxMaNEc1g" name="Utilisateur" coveredBy="_zOjwsPkuEei33fxMaNEc1g _tk7ZQfkvEei33fxMaNEc1g"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_i-BzYPksEei33fxMaNEc1g" name="Alfred" coveredBy="_yUqUQPkuEei33fxMaNEc1g _zOkXwPkuEei33fxMaNEc1g _tk7ZQPkvEei33fxMaNEc1g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zOjwsPkuEei33fxMaNEc1g" name="LireDernierConseilSend" covered="_hRcVwPksEei33fxMaNEc1g" message="_zOjJoPkuEei33fxMaNEc1g"/>
-      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_yUqUQPkuEei33fxMaNEc1g" name="AlfredExecution" covered="_i-BzYPksEei33fxMaNEc1g" start="_zOkXwPkuEei33fxMaNEc1g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zOkXwPkuEei33fxMaNEc1g" name="LireDernierConseilRecv" covered="_i-BzYPksEei33fxMaNEc1g" message="_zOjJoPkuEei33fxMaNEc1g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tk7ZQPkvEei33fxMaNEc1g" name="dernierConseilSend" covered="_i-BzYPksEei33fxMaNEc1g" message="_tk6LIPkvEei33fxMaNEc1g"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tk7ZQfkvEei33fxMaNEc1g" name="dernierConseilRecv" covered="_hRcVwPksEei33fxMaNEc1g" message="_tk6LIPkvEei33fxMaNEc1g"/>
-      <message xmi:type="uml:Message" xmi:id="_zOjJoPkuEei33fxMaNEc1g" name="lireDernierConseil()" receiveEvent="_zOkXwPkuEei33fxMaNEc1g" sendEvent="_zOjwsPkuEei33fxMaNEc1g"/>
-      <message xmi:type="uml:Message" xmi:id="_tk6LIPkvEei33fxMaNEc1g" name="dernierConseil" receiveEvent="_tk7ZQfkvEei33fxMaNEc1g" sendEvent="_tk7ZQPkvEei33fxMaNEc1g"/>
-    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_a0T4MOjvEeiSM58Ap4YmOQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a0T4MejvEeiSM58Ap4YmOQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
