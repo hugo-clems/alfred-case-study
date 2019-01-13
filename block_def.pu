@@ -1,0 +1,33 @@
+@startuml
+allow_mixing
+class System << (B, #1593BA) Block >> {
+    
+    __
+
+    __
+}
+class Interface << (B, #1593BA) Block >> {
+    
+    __
+
+    __
+}
+class ConseilService << (B, #1593BA) Block >> {
+    
+    __
+    recupererConseil()
+    __
+}
+class ConseilRepository << (B, #1593BA) Block >> {
+    
+    __
+    findDernierConseil()
+    __
+}
+actor Utilisateur
+
+System *-- "0..1 utilisateur" Utilisateur
+System *-- "interface 1" Interface
+System *-- "service 1" ConseilService
+System *-- "repository 1" ConseilRepository
+@enduml
