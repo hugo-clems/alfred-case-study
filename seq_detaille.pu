@@ -1,14 +1,24 @@
 @startuml
     actor Utilisateur
-    participant Alfred
+    participant Int as ":Interface"
+    participant Serv as ":ConseilService"
+    participant Repo as ":ConseilRepository"
+    database DB
 
-    Utilisateur->Alfred: demanderDernierConseil()
-    activate Alfred
-    Alfred->Alfred: fetchConseil()
-    activate Alfred
-    Alfred-->Alfred: dernierConseil
-    deactivate Alfred
-    Alfred-->Utilisateur: dernierConseil
-    Alfred-->Utilisateur: void
-    deactivate Alfred
+    Utilisateur->>Int: Appuyer sur le bouton dernier conseil
+    activate Int
+    Int->Serv: recupererConseil()
+    activate Serv
+    Serv->Repo: findDernierConseil()
+    activate Repo
+    Repo->>DB: *requête sql*
+    activate DB
+    Repo<--DB: dernier conseil
+    deactivate DB
+    Serv<--Repo: dernierConseil
+    deactivate Repo
+    Int<--Serv: dernierConseil
+    deactivate Serv
+    Utilisateur<--Int: affichage du dernier conseil
+    deactivate Int
 @enduml
